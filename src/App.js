@@ -1,9 +1,8 @@
 import './App.css';
-// import { logo } from './logo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
-import {Services} from './components/Services';
+import { Services } from './components/Services';
 
 
 

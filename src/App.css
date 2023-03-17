@@ -91,7 +91,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   color: var(--navbar-text-color);
   justify-content: space-between;
   letter-spacing: 2px;
-  padding: 0 20px;
+  padding: 0 8px;
   font-size: 17px;
   opacity: 55%;
 }
@@ -264,7 +264,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  animation: btnfloat 20s ease-in-out 0s infinite normal forwards; 
+  animation: btnfloat 15s ease-in-out 0s infinite normal; 
 
 }
 
@@ -319,6 +319,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
   padding: 8px 5px;
+  transition: 0.8s ease-in-out;
+
 }
 @keyframes btnfloat{
   0% {
@@ -335,18 +337,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner button svg {
-  font-size: 25px;
+  font-size: 20px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
 .banner button:hover{
-  font-size: 22px;
+  font-size: 19px;
+  transition: 0.8s ease-in-out;
+
 }
 .banner button:hover svg {
-  margin-left: 25px;
-  transition: 0.5s ease-in-out;
+  margin-left: 20px;
+  transition: 0.8s ease-in-out;
 }
+
 
 .banner img {
   animation: sprout 10s ease-in-out 0s infinite normal forwards;
