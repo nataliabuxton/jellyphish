@@ -6,10 +6,12 @@ import { Services } from './components/Services';
 
 
 
+
 function App() {
   return ( <div>
   <NavBar />
   <Banner />
+  <Services />
   </div>
   )
 }

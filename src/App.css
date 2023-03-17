@@ -55,7 +55,6 @@ body{
   font-weight: normal;
   overflow-x: hidden;
   position: relative;
-  background: var(--body-color) !important;
   color: var(--white-color) !important;
   font-family: 'Stick-no-bills', sans !important;
 }
@@ -372,11 +371,69 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
-
+/* 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+} */
+
+
+/* Services */
+
+.services {
+  padding: 0 0 50px 0;
+  position: relative;
+  background-image: url('./assets/img/backgroundimg-banner.jpg');
+  background-position: top center;
+  background-size: cover;
+}
+.services-bx {
+  background-image: url(./assets/img/servicebxbackground.jpg);
+  border-radius: 90px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -50px;
+  animation: btnfloat 20s ease-in-out 0s infinite normal forwards;
+
+  /* animation: btnfloat 15s ease-in-out 0s infinite normal forwards;  */
+
+}
+.services h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+.services p {
+    color: var(--white-color);
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
+.services-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  padding: 10px;
+}
+.services-slider .item img {
+  width: 70%;
+  height: 80%;
+  margin: 0 auto 15px auto;
+}
+
+
+.background-img {
+  top: 20%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+
+.services-img{
+  width: 20px;
+  height: 100px;
 }
 
 .App-header {
