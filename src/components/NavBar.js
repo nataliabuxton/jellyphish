@@ -54,8 +54,8 @@ const onUpdateActiveLink = (value) => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link href="#product" className={activeLink === 'product' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('product')}>Product</Nav.Link>
               <Nav.Link href="#services" className={activeLink === 'services' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('services')}>Services</Nav.Link>
+              <Nav.Link href="#product" className={activeLink === 'product' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('product')}>Product</Nav.Link>
               <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}>Contact</Nav.Link>
             </Nav>
             <span className="navbar-text">
@@ -64,7 +64,7 @@ const onUpdateActiveLink = (value) => {
                 <a href="#"><img src={igLogo} alt="" /></a>
                 <a href="#"><img src={ytLogo} alt="" /></a>
             </div>
-            <button className="vvd" onClick={() => console.log('connect')} ><span>Contact</span></button>
+            <button className="vvd btn btn--flex" onClick={() => console.log('connect')} ><span>Contact</span></button>
             </span>
           </Navbar.Collapse>
         </Container>
