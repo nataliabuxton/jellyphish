@@ -1,6 +1,6 @@
 import {Nav, Container , Col, Row, Tab} from 'react-bootstrap';
 import { ProductsTabs } from "./ProductsTabs";
-// import backgroundImageProducts from '../assets/img/productsbackground.jpg';
+import backgroundImageProducts from '../assets/img/productsbackground.jpg';
 import product1 from '../assets/img/prodimg1.png';
 import product2 from '../assets/img/prodimg2.png';
 import product3 from '../assets/img/prodimg3.png';
@@ -16,8 +16,8 @@ import TrackVisibility from 'react-on-screen';
 export const Products = () => {
 
 
-    const products = [
-        {
+    const producto = [
+         {
             title: "The Wave System",
             description: "Design & Development",
             imgUrl: product1,
@@ -50,10 +50,11 @@ export const Products = () => {
     ];
 
     return (
-        <><section className="product" id="product">
-            {/* <Container> */}
-                {/* <Row> */}
-                    {/* <Col size={12}> */}
+        <>
+        <section className="product" id="product">
+            {/* <Container>
+                <Row> */}
+                     <Col size={12}>
                         <TrackVisibility>
                             {({ isVisible }) => <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                 <h2>Products</h2>
@@ -95,86 +96,50 @@ export const Products = () => {
                                     </Nav>
                                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                                     <Tab.Pane eventKey="first">
+                                        <Row>
                                         {
-                                            products.map((product, index) => {
+                                            producto.map((producto, index) => {
                                                 return (
                                                 <ProductsTabs
                                                     key={index}
-                                                    {...product}
+                                                    {...producto}
                                                     />
                                                 )
                                             })
                                             }
+                                            </Row>
                                         </Tab.Pane>
-                                        <Tab.Pane eventKey="second">                                        
-                                            {
-                                            products.map((product, index) => {
-                                                return (
-                                                <ProductsTabs
-                                                    key={index}
-                                                    {...product}
-                                                    />
-                                                )
-                                            })
-                                            }
+                                        <Tab.Pane eventKey="second">  
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque modi praesentium delectus amet quo dolorum consectetur voluptas ut inventore, unde iste doloribus veritatis dolorem cum atque velit laboriosam tenetur assumenda?</p>
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="third">
-                                            {
-                                            products.map((product, index) => {
-                                                return (
-                                                <ProductsTabs
-                                                    key={index}
-                                                    {...product}
-                                                    />
-                                                )
-                                            })
-                                            }
+                                            <Row>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio explicabo rem consequuntur officia. Laborum nihil veniam porro quod, vero amet optio, praesentium ipsam quos expedita quis similique eveniet repellendus illo.</p>
+                                            </Row>
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="fourth">
-                                            {
-                                            products.map((product, index) => {
-                                                return (
-                                                <ProductsTabs
-                                                    key={index}
-                                                    {...product}
-                                                    />
-                                                )
-                                            })
-                                            }
+                                        <Row>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio explicabo rem consequuntur officia. Laborum nihil veniam porro quod, vero amet optio, praesentium ipsam quos expedita quis similique eveniet repellendus illo.</p>
+                                            </Row>
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="fifth">
-                                            {
-                                            products.map((product, index) => {
-                                                return (
-                                                <ProductsTabs
-                                                    key={index}
-                                                    {...product}
-                                                    />
-                                                )
-                                            })
-                                            }
+                                        <Row>
+                                        </Row>
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="sixth">
-                                            {
-                                            products.map((product, index) => {
-                                                return (
-                                                <ProductsTabs
-                                                    key={index}
-                                                    {...product}
-                                                    />
-                                                )
-                                            })
-                                            }                                      
+                                        <Row>
+                                            </Row>                                    
                                         </Tab.Pane>
                                     </Tab.Content>
                                 </Tab.Container>
                             </div>}
                      </TrackVisibility>
-                {/* </Col> */}
-            {/* </Row> */}
-        {/* </Container> */}
-        {/* <img className="background-image" src={backgroundImageProducts} alt="" /> */}
+                </Col> 
+         {/* </Row>
+         </Container> */}
+         <img className="background-image" src={backgroundImageProducts} alt="" />
         </section>
         </>
-        )
-};
+    )
+
+ }

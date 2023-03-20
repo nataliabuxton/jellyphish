@@ -1,15 +1,15 @@
-import { Col, Row, Container } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 
 
-export function ProductsTabs({ title, description }) {
+export const ProductsTabs = ({ title, description, producto }) => {
     return (
-        <Container fluid>
+        <Col size={12} sm={6} md={4} fluid>
             <div className="prod-imgbx">
                 <div className="product-description">
                     <h3>{title}</h3>
                     <span>{description}</span>
                 </div>
             </div>
-            </Container>
+        </Col>
     );
 }
